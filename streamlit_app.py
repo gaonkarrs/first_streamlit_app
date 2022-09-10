@@ -42,7 +42,7 @@ try:
 except URLError as e:
   streamlit.error()
 
-
+streamlit.title("View Our Fruit List- Add your favorites")
 streamlit.header("The Fruit Load List contains:")
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
